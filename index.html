@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Gojira Wiki</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Gojira Wiki</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
 
-<body>
+    <body class="bg-gray-900 text-white min-h-screen flex flex-col">
+        <header class="bg-black/90 p-4 flex justify-between items-center shadow-lg fixed top-0 left-0 w-full shadow-md z-50">
+            <h1 class="text-2xl font-bold tracking-wide text-white">Gojira Wiki</h1>
+            <nav class="flex gap-4"> 
+                <button class="px-3 py-1 rounded-lg text-white hover:bg-gray-700 transition">Home</button> 
+                <button class="px-3 py-1 rounded-lg text-white hover:bg-gray-700 transition">Monsters</button> 
+                <button class="px-3 py-1 rounded-lg text-white hover:bg-gray-700 transition">Movies</button> 
+            </nav>
+        </header>
 
-    <header class="bg-black text-white p-4 flex justify-between">
+        <section class="pt-10 mt-8 px-4"> <img class="mx-auto w-full max-w-4xl rounded-2xl shadow-xl object-cover"
+            src="assets/imgs/godzilla.jpg" alt="Godzilla">
+        </section>
 
-        <h1 class="text-xl font-bold">
-            Godzilla Wiki
-        </h1>
-
-        <nav class="flex gap-6">
-            <button id="nav1" class="hover:bg-gray-600 rounded-lg"><a>Home</a></button>
-            <button id="nav2" class="hover:bg-gray-600 rounded-lg"><a>Monsters</a></button>
-            <button id="nav3" class="hover:bg-gray-600 rounded-lg"><a>Movies</a></button>
-        </nav>
-    </header>
-
-    <section>
-        <img class="mx-auto max-w-md overflow-hidden rounded-xl bg-gray-600 shadow-md md:max-w-2xl" src="assets/imgs/godzilla.jpg" alt="Imagen Inicial da Wiki...">
-    </section>
-
-    <section>
-        <div class="mx-auto max-w-md overflow-hidden rounded-xl bg-gray-600 shadow-md md:max-w-2xl">
-            <div class="md:flex">
-
-                <div class="p-8">
-                    <div class="text-sm font-semibold tracking-wide text-indigo-500 uppercase">Titulo Provisorio</div>
-                    <p class="mt-2 text-gray-500">
-                    Descrição referente a sessao especifica...
-                    </p>
-                </div>
+        <section class="mt-10 px-4">
+            <div class="mx-auto max-w-3xl bg-gray-800 rounded-2xl shadow-lg p-8">
+                <h2 class="text-2xl font-semibold text-indigo-400 mb-4"> Título Provisório </h2>
+                <p class="text-gray-300 leading-relaxed"> Descrição referente à sessão específica. Aqui você poderá
+                    apresentar a história, poderes ou qualquer informação relevante sobre o personagem. Esse conteúdo
+                    futuramente será renderizado dinamicamente com JavaScript. 
+                </p>
             </div>
-        </div>
+        </section>
 
-    </section>
+        <footer class="mt-12 text-center text-gray-500 text-sm pb-4"> © 2026 Gojira Wiki - Projeto em desenvolvimento </footer>
 
+        <script type="module" src="app.js"></script>
 
-</body>
-
-    <script type="module" src="app.js"></script>
-
+    </body>
 </html>
