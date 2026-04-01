@@ -6,24 +6,56 @@ function render(chars) {
   app.innerHTML = `
     <h1><strong>${chars.nome}</strong></h1>
     <br>
+    
     <h2> <strong>Lore</strong></h2>
     <p>${chars.lore}</p>
+    
     <br>
     <h2> <strong>Poderes</strong></h2>
+    
     <ul>
-        ${chars.powers}
+        ${chars.powers.map(p => `<li>${p}</li>`).join("")}
     </ul>
+    
     <br>
     <h2><strong>Aparições</strong></h2>
+    
     <ul>
-        ${chars.apparitions}
+        ${chars.apparitions.map(a=> `<li>${a}</li>`).join("")}
     </ul>
+    
     <br>
     <img src="${chars.image}" class="w-full rounded-lg shadow-md">
   `;
 }
 
-render(chars[0]);
+// Implementação do menu de alteração de personagens...
+
+let statChar = chars[0]
+const menu = document.getElementById('menu')
+
+function renderMenu(){
+  menu.innerHTML = ""
+
+  chars.forEach((char, index)=>{
+    const btn = document.createElement("button")
+    btn.textContent = char.nome
+    btn.className = "px-3 py-1 bg-gray-700 rounded hover:bg-gray-500"
+
+    btn.addEventListener("click", ()=>{
+      selectChar(index)
+    })
+    menu.appendChild(btn)
+  })
+}
+
+function selectChar(index){
+  statChar = chars[index]
+  render(statChar)
+}
+
+renderMenu()
+render(statChar)
 
 
 // Implementação do Carrossel de Imagens da Tela Inicial...
