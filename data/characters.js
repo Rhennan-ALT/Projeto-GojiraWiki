@@ -13,7 +13,7 @@ export const chars = [
         image: 'assets/imgs/sh_gojira.jpg'
     },
     {
-        btn_nome: 'king Kong',
+        btn_nome: 'King Kong',
         
         nome: "King Kong (キングコング, Kingu Kongu)",
         
