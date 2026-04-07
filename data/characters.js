@@ -21,7 +21,7 @@ export const chars = [
         
         powers: ["Força Sobrenatural, Inteligência e Adaptação;", "Agilidade e Velocidade;", "Resistência e Durabilidade, Garras e Dentes Afiados;", "Habilidades de Escalada, Habilidades de Natação, Rugido Poderoso;"],
         
-        apparitions: ["A Era Clasica: King Kong (1933), King Kong vs. Godzilla (1962), King Kong Escapes (1967);", "A Era Moderna: King Kong (2005);", "Monsterverse: Kong: A Ilha da Caveira (2017), Godzilla vs. Kong (2021)."],
+        apparitions: ["A Era Clasica: King Kong (1933), King Kong vs Godzilla (1962), King Kong Escapes (1967);", "A Era Moderna: King Kong (2005);", "Monsterverse: Kong: A Ilha da Caveira (2017), Godzilla vs. Kong (2021)."],
         
         image: "assets/imgs/kong.jpeg"
     }
