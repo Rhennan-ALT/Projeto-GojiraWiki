@@ -45,6 +45,6 @@ export const chars = [
         "Monsterverse: Godzilla: II Rei dos Monstros (2019), Godzilla vs. Kong (2021 - como consciência/Mechagodzilla)."
     ],
     
-    image: "assets/imgs/ghidorah.jpeg"
+    image: "assets/imgs/"
 }
 ]
