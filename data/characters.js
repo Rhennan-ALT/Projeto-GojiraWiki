@@ -24,5 +24,27 @@ export const chars = [
         apparitions: ["A Era Clasica: King Kong (1933), King Kong vs Godzilla (1962), King Kong Escapes (1967);", "A Era Moderna: King Kong (2005);", "Monsterverse: Kong: A Ilha da Caveira (2017), Godzilla vs. Kong (2021)."],
         
         image: "assets/imgs/kong.jpeg"
-    }
+    },
+    {
+    btn_nome: 'King Ghidorah',
+    
+    nome: "King Ghidorah (キングギドラ, Kingu Gidora)",
+    
+    lore: "King Ghidorah, também conhecido como Monster Zero, é um dragão dourado de três cabeças e origem extraterrestre. Ele é o maior nêmesis de Godzilla e um predador alfa que busca remodelar o ecossistema da Terra através de tempestades catastróficas. No Monsterverse, ele foi despertado de seu sono glacial na Antártida para retomar seu trono como o falso rei dos monstros.",
+    
+    powers: [
+        "Bio-Eletricidade e Raios de Gravidade;", 
+        "Geração de Tempestades e Furacões;", 
+        "Regeneração Celular Acelerada e Absorção de Energia;", 
+        "Voo Supersônico, Força Titânica e Escudo de Escalas;"
+    ],
+    
+    apparitions: [
+        "A Era Clássica: Ghidorah, the Three-Headed Monster (1964), Invasion of Astro-Monster (1965), Destroy All Monsters (1968);", 
+        "Era Heisei/Millennium: Godzilla vs. King Ghidorah (1991), Godzilla, Mothra and King Ghidorah: Giant Monsters All-Out Attack (2001);", 
+        "Monsterverse: Godzilla: II Rei dos Monstros (2019), Godzilla vs. Kong (2021 - como consciência/Mechagodzilla)."
+    ],
+    
+    image: "assets/imgs/ghidorah.jpeg"
+}
 ]
